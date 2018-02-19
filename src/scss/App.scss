@@ -1,30 +1,38 @@
 @import 'navbar.scss';
 
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'FF Clan';
+  src: local('FF Clan'),
+       local('FF-Clan'),
+       url(../fonts/FF_Clan_Pro_Black_1.ttf) format('truetype');
+       font-weight: 800;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@font-face {
+  font-family: 'FF Clan';
+  src: local('FF Clan'),
+       local('FF-Clan'),
+       url(../fonts/FF_Clan_Pro_Narrow_Thin_2.ttf) format('truetype');
+       font-weight: 300;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dddddd;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+	.app {
+		width: 100%;
+		max-width: 1000px;
+		text-align: center;
+		.slide1 {
+			height: calc(100vh-100px);
+			margin-top: 100px;
+			width: 100%;
+		}
+	}
 }
