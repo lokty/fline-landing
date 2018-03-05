@@ -1,0 +1,96 @@
+.navbar-wrapper {
+  width: 100vw;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10; }
+  .navbar-wrapper .navbar {
+    width: 100%;
+    max-width: 1000px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; }
+    .navbar-wrapper .navbar .logo {
+      max-height: 50px; }
+    .navbar-wrapper .navbar .links a {
+      margin-left: 30px;
+      color: #999999; }
+      .navbar-wrapper .navbar .links a:first-of-type {
+        margin-left: 0; }
+
+body {
+  margin: 0; }
+
+@font-face {
+  font-family: 'FF Clan';
+  src: local("FF Clan"), local("FF-Clan"), url(../fonts/FF_Clan_Pro_Black_1.ttf) format("truetype");
+  font-weight: 800; }
+@font-face {
+  font-family: 'FF Clan';
+  src: local("FF Clan"), local("FF-Clan"), url(../fonts/FF_Clan_Pro_Narrow_Thin_2.ttf) format("truetype");
+  font-weight: 300; }
+#content-wrapper {
+  font-family: 'Open Sans', sans-serif;
+  color: #3a8cf5; }
+  #content-wrapper .app {
+    display: flex;
+    flex-direction: column; }
+    #content-wrapper .app .slide-content-wrapper {
+      display: flex;
+      overflow: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 1000px;
+      width: 100%; }
+    #content-wrapper .app .slide {
+      text-align: center;
+      height: calc(100vh - 100px);
+      display: flex;
+      justify-content: center; }
+      #content-wrapper .app .slide.slide1 {
+        margin-top: 100px;
+        background-color: #f6f6f6; }
+        #content-wrapper .app .slide.slide1 .plate {
+          font-family: 'FF Clan';
+          margin-top: auto;
+          background-color: white;
+          width: 500px;
+          height: 85%;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-items: flex-start; }
+          #content-wrapper .app .slide.slide1 .plate .presenting {
+            margin-top: 50px;
+            color: #999999; }
+          #content-wrapper .app .slide.slide1 .plate .big-letters {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            margin-top: 50px;
+            font-weight: 800;
+            font-size: 36pt;
+            color: #3a8cf5;
+            border-left: 20px;
+            border-color: #eb6d67;
+            text-align: left; }
+            #content-wrapper .app .slide.slide1 .plate .big-letters .left-row {
+              background-color: #eb6d67;
+              width: 20px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              padding: 0; }
+            #content-wrapper .app .slide.slide1 .plate .big-letters .right-row {
+              margin-left: 20px; }
+              #content-wrapper .app .slide.slide1 .plate .big-letters .right-row p {
+                margin: 0; }
+
+/*# sourceMappingURL=App.css.map */

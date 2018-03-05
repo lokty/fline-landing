@@ -1,0 +1,27 @@
+.navbar-wrapper {
+  width: 100vw;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10; }
+  .navbar-wrapper .navbar {
+    width: 100%;
+    max-width: 1000px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; }
+    .navbar-wrapper .navbar .logo {
+      max-height: 50px; }
+    .navbar-wrapper .navbar .links a {
+      margin-left: 30px;
+      color: #999999; }
+      .navbar-wrapper .navbar .links a:first-of-type {
+        margin-left: 0; }
+
+/*# sourceMappingURL=navbar.css.map */

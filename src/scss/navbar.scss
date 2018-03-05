@@ -5,15 +5,18 @@
 	background-color: white;
 	height: 100px;
 	display: flex;
+  flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
+	z-index: 10;
 	.navbar {
 		width: 100%;
 		max-width: 1000px;
+    height: 70px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		position: fixed;
 		top: 0;
 		.logo {
 			max-height: 50px;

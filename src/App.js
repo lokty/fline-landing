@@ -5,7 +5,7 @@ import logo from './images/logo.png';
 class App extends Component {
   render() {
     return (
-			<div id="wrapper">
+			<div id="content-wrapper">
 
       	<div className="navbar-wrapper">
 					<div className="navbar">
@@ -23,11 +23,34 @@ class App extends Component {
 				</div>
 
       	<div className="app">
-					<div className="slide1">
 
+					<div className="slide slide1">
+            <div className="slide-content-wrapper">
+              <div className="plate">
+                <div className="presenting">
+                  PRESENTING
+                </div>
+                <div className="big-letters">
+                  <div className="left-row">
+                  </div>
+                  <div className="right-row">
+                    <p>ULTIMATE<br/>
+                    OPTICAL<br/>
+                    CHARACTER<br/>
+                    RECOGNITION</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 					</div>
-      	</div>
 
+          <div className="slide">
+          </div>
+
+          <div className="slide">
+          </div>
+
+      	</div>
 			</div>
     );
   }
