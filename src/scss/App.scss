@@ -295,7 +295,9 @@ body { margin: 0; }
           justify-content: center;
 				}
 			}
+
 			&.slide4 {
+				height:110vh;
         .slide4-back {
 					display: flex;
 					background-color: white;
@@ -340,6 +342,27 @@ body { margin: 0; }
 					align-items: center;
 				}
 				.plate4 {
+					height: auto;
+					padding-top: 40px;
+					padding-bottom: 60px;
+					display: flex;
+					flex-direction: column;
+          align-items: center;
+          justify-content: center;
+				}
+			}
+
+			&.slide5 {
+        .slide5-back {
+					display: flex;
+					background-color: white;
+					width: 100%;
+				}
+				.slide5-content-wrapper {
+					justify-content: center;
+					align-items: center;
+				}
+				.plate5 {
 					height: auto;
 					padding-top: 40px;
 					padding-bottom: 60px;

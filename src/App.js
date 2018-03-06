@@ -301,6 +301,60 @@ class App extends Component {
 						</div>
           </div>
 
+      <div className="slide slide4">
+						<div className="background slide4-back">
+							<div className="blocks" >
+								<img src={ slide4BackTop } />
+							</div>
+							<Plx className="blurred-right"
+								parallaxData={ [
+										{
+											start: 'self',
+											duration: 200,
+											name: 'second_left',
+											properties: [
+												{
+													startValue: 0,
+													endValue: 0,
+													property: 'translateY',
+												}
+										]}
+									]}>
+								<div>&nbsp;</div>
+								<img src={ slide4BackBlurred } />
+							</Plx>
+							<Plx className="blurred-left"
+								parallaxData={ [
+										{
+											start: 'self',
+											duration: 400,
+											name: 'second_left',
+											properties: [
+												{
+													startValue: 300,
+													endValue: -300,
+													property: 'translateY',
+												}
+											]
+										}]
+									}>
+								<div>&nbsp;</div>
+								<img src={ slide4BackBlurred } />
+							</Plx>
+						</div>
+            <div className="slide-content-wrapper slide4-content-wrapper">
+							<div className="plate plate4">
+								<div className="plate-title">
+									BUt WE DON'T USE NEURAL NETWORKS
+								</div>
+								<div className="plate-text">
+									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of neural networks. We believe, that it's not the most effective and promising way to solve problems, that AI has to solve.</p>
+									<p>Our approach to Artificial Intelligence is algorythmical: it's much more agile and, more importantly, transparent, meaning rules, that our AI constructs via learning process, are explicit and representable in the form, that human can understand.</p>
+								</div>
+							</div>
+						</div>
+          </div>
+
       	</div>
 			</div>
     );
