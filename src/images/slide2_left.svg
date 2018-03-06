@@ -1,0 +1,36 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="215.2" height="62" viewBox="0 0 215.2 62">
+  <title>slide2_left</title>
+  <g>
+    <path d="M18,22V42a3,3,0,0,0,3,3H43a3,3,0,0,0,3-3V22a3,3,0,0,0-3-3H21A3,3,0,0,0,18,22Zm3-1h2v2h2V21h2v4H23v2H20V22A.94.94,0,0,1,21,21ZM31,39v4H29V39Zm2,0h2v4H33Zm-8-2V27H39V37Zm8-12V21h2v4Zm-2,0H29V21h2ZM23,35H20V33h3Zm0-4H20V29h3ZM20,42V37h3v2h4v4H25V41H23v2H21A.94.94,0,0,1,20,42Zm23,1H41V41H39v2H37V39h4V37h3v5A.94.94,0,0,1,43,43ZM41,29h3v2H41Zm0,4h3v2H41Zm3-11v5H41V25H37V21h2v2h2V21h2A.94.94,0,0,1,44,22Z" transform="translate(152.2 -1)" fill="#3a8cf5"/>
+    <path d="M27,35H37V29H27Zm2-4h6v2H29Z" transform="translate(152.2 -1)"/>
+    <rect x="185.2" y="46" width="2" height="12" fill="#f3f3f3"/>
+    <rect x="185.2" y="60" width="2" height="2" fill="#f6726c"/>
+    <rect x="181.2" y="46" width="2" height="12" fill="#f3f3f3"/>
+    <rect x="181.2" y="60" width="2" height="2" fill="#f6726c"/>
+    <polygon points="177.2 54 163.2 54 163.2 56 179.2 56 179.2 46 177.2 46 177.2 54" fill="#f3f3f3"/>
+    <rect x="159.2" y="54" width="2" height="2" fill="#f6726c"/>
+    <polygon points="175.2 46 173.2 46 173.2 50 157.2 50 157.2 52 175.2 52 175.2 46" fill="#f3f3f3"/>
+    <rect x="153.2" y="50" width="2" height="2" fill="#f6726c"/>
+    <polygon points="191.2 46 189.2 46 189.2 56 205.2 56 205.2 54 191.2 54 191.2 46" fill="#f3f3f3"/>
+    <rect x="207.2" y="54" width="2" height="2" fill="#f6726c"/>
+    <polygon points="195.2 46 193.2 46 193.2 52 211.2 52 211.2 50 195.2 50 195.2 46" fill="#f3f3f3"/>
+    <rect x="213.2" y="50" width="2" height="2" fill="#f6726c"/>
+    <rect x="181.2" y="4" width="2" height="12" fill="#f3f3f3"/>
+    <rect x="181.2" width="2" height="2" fill="#f6726c"/>
+    <rect x="185.2" y="4" width="2" height="12" fill="#f3f3f3"/>
+    <rect x="185.2" width="2" height="2" fill="#f6726c"/>
+    <polygon points="191.2 8 205.2 8 205.2 6 189.2 6 189.2 16 191.2 16 191.2 8" fill="#f3f3f3"/>
+    <rect x="207.2" y="6" width="2" height="2" fill="#f6726c"/>
+    <polygon points="193.2 16 195.2 16 195.2 12 211.2 12 211.2 10 193.2 10 193.2 16" fill="#f3f3f3"/>
+    <rect x="213.2" y="10" width="2" height="2" fill="#f6726c"/>
+    <polygon points="177.2 16 179.2 16 179.2 6 163.2 6 163.2 8 177.2 8 177.2 16" fill="#f3f3f3"/>
+    <rect x="159.2" y="6" width="2" height="2" fill="#f6726c"/>
+    <polygon points="173.2 16 175.2 16 175.2 10 157.2 10 157.2 12 173.2 12 173.2 16" fill="#f3f3f3"/>
+    <rect x="153.2" y="10" width="2" height="2" fill="#f6726c"/>
+    <rect y="22" width="168.2" height="2" fill="#f3f3f3"/>
+  </g>
+  <rect y="26" width="168.2" height="2" fill="#f3f3f3"/>
+  <rect y="30" width="168.2" height="2" fill="#f3f3f3"/>
+  <rect y="34" width="168.2" height="2" fill="#f3f3f3"/>
+  <rect y="38" width="168.2" height="2" fill="#f3f3f3"/>
+</svg>
