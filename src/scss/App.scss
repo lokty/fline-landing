@@ -1,5 +1,10 @@
 @import 'navbar.scss';
 @import 'colors.scss';
+
+$viktor: url(../../images/viktor.jpg);
+$ivan: url(../../images/ivan.jpg);
+$sergey: url(../../images/sergey.jpg);
+
 body { margin: 0; }
 
 @font-face {
@@ -24,6 +29,14 @@ body { margin: 0; }
        local('FF-Clan'),
        url(../fonts/FF_Clan_Pro_Narrow_Thin_2.ttf) format('truetype');
        font-weight: 300;
+}
+
+.select-red {
+	color: $RED;
+}
+
+.select-blue {
+	color: $BLUE;
 }
 
 .border-top-inset::after {
@@ -244,7 +257,7 @@ body { margin: 0; }
 				.plate2 {
 					display: flex;
 					flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
 				}
 			}
@@ -342,25 +355,130 @@ body { margin: 0; }
 					align-items: center;
 				}
 				.plate4 {
+					margin-top: 50px;
 					height: auto;
+					width: 500px;
 					padding-top: 40px;
 					padding-bottom: 60px;
 					display: flex;
 					flex-direction: column;
           align-items: center;
           justify-content: center;
+					.plate-text {
+						width: 360px;
+					}
+					.numbers {
+						display: flex;
+						flex-direction: column;
+						margin-bottom: 40px;
+						.number {
+							margin-top: 15px;
+							display: flex;
+							justify-content: space-between;
+							align-items: flex-end;
+							white-space: nowrap;
+							.field {
+								font-size: 12pt;
+								font-weight: 600;
+							}
+							.dots {
+								letter-spacing: 4px;
+								flex-grow: 1;
+								overflow: hidden;
+								margin-left: 20px;
+								margin-right: 20px;
+								color: $MIDDLE_GRAY;
+								font-size: 18pt;
+								&::after {
+									content: '....................................';
+								}
+							}
+						}
+					}
 				}
 			}
 
 			&.slide5 {
         .slide5-back {
 					display: flex;
-					background-color: white;
+					background-color: $LIGHT_GRAY;
 					width: 100%;
 				}
 				.slide5-content-wrapper {
 					justify-content: center;
 					align-items: center;
+				}
+				.team-title {
+					font-family: 'FF Clan';
+					font-weight: 600;
+					font-size: 30pt;
+					z-index: 10;
+					text-transform: uppercase;
+					margin-bottom: 40px;
+					color: $BLUE;
+				}
+				.faces {
+					z-index: 10;
+					display: flex;
+					justify-content: space-around;
+					width: 100%;
+					margin-top: 150px;
+					text-align: left;
+					@media(max-width: 992px) {
+						flex-direction: column;
+						align-items: center;
+						margin-top: 60px;
+					}
+					.faces-columns-wrapper {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin-top: -100px;
+						width: 300px;
+						@media(max-width: 992px) {
+							margin-top: 50px;
+							&:first-of-type {
+								margin-top: 0px;
+							}
+						}
+					}
+					.face-face {
+						width: 200px;
+						height: 200px;
+						//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+						border-radius: 50%;
+						background-position: center;
+						background-size: cover;
+						margin-bottom: 20px;
+					}
+					.viktor {
+						background-image: $viktor;
+					}
+					.ivan {
+						background-image: $ivan;
+					}
+					.alla {
+						background-image: $sergey;
+					}
+					.faces-name {
+						margin-top: 15px;
+						font-weight: 600;
+						font-size: 14pt;
+						width: 250px;
+						color: $BLUE;
+					}
+					.faces-status {
+						margin-top: 15px;
+						font-weight: 300;
+						font-style: italic;
+						font-size: 12pt;
+						width: 250px;
+					}
+					.faces-cv {
+						margin-top: 15px;
+						font-size: 10pt;
+						padding: 0 20px;
+					}
 				}
 				.plate5 {
 					height: auto;

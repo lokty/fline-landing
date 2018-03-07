@@ -27,8 +27,8 @@ class App extends Component {
 							<a>Plans</a>
 							<a>Team</a>
 						</div>
-						<div className="contactus">
-							Contanct Us
+						<div className="contactus select-blue">
+							<strong>Contact Us</strong>
 						</div>
 					</div>
 				</div>
@@ -155,10 +155,10 @@ class App extends Component {
             <div className="slide-content-wrapper slide2-content-wrapper">
 							<div className="plate plate2">
 								<div className="plate-title">
-									Based on our research in AI
+									Based on our <br/>research in <span className="select-red">AI</span>
 								</div>
 								<div className="plate-text">
-									<p>In the core of the system (both detection and recognition) lies Artificial Intelligence: it make hypothesys, tries to interpret the result, learns on its mistakes -- all the things, that AI should do.</p>
+									<p>In the core of the system (both detection and recognition) lies <span className="select-red"><strong>Artificial Intelligence</strong></span>: it make hypothesys, tries to interpret the result, learns on its mistakes -- all the things, that AI should do.</p>
 									<p>Concidering the complexity of the task, using AI is inevitable: it grants more sophisticated tools to classify data, rather than just plain heuristics and </p>
 								</div>
 							</div>
@@ -237,10 +237,10 @@ class App extends Component {
             <div className="slide-content-wrapper slide3-content-wrapper">
 							<div className="plate plate3 border-bottom">
 								<div className="plate-title">
-									BUt WE DON'T USE NEURAL NETWORKS
+									BUt WE DON'T USE <span className="select-blue">NEURAL NETWORKS</span>
 								</div>
 								<div className="plate-text">
-									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of neural networks. We believe, that it's not the most effective and promising way to solve problems, that AI has to solve.</p>
+									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of <span className="select-blue"><strong>neural networks</strong></span>. We believe, that it's not the most effective and promising way to solve problems, that AI has to solve.</p>
 									<p>Our approach to Artificial Intelligence is algorythmical: it's much more agile and, more importantly, transparent, meaning rules, that our AI constructs via learning process, are explicit and representable in the form, that human can understand.</p>
 								</div>
 							</div>
@@ -252,104 +252,88 @@ class App extends Component {
 							<div className="blocks" >
 								<img src={ slide4BackTop } />
 							</div>
-							<Plx className="blurred-right"
-								parallaxData={ [
-										{
-											start: 'self',
-											duration: 200,
-											name: 'second_left',
-											properties: [
-												{
-													startValue: 0,
-													endValue: 0,
-													property: 'translateY',
-												}
-										]}
-									]}>
-								<div>&nbsp;</div>
-								<img src={ slide4BackBlurred } />
-							</Plx>
-							<Plx className="blurred-left"
-								parallaxData={ [
-										{
-											start: 'self',
-											duration: 400,
-											name: 'second_left',
-											properties: [
-												{
-													startValue: 300,
-													endValue: -300,
-													property: 'translateY',
-												}
-											]
-										}]
-									}>
-								<div>&nbsp;</div>
-								<img src={ slide4BackBlurred } />
-							</Plx>
 						</div>
             <div className="slide-content-wrapper slide4-content-wrapper">
 							<div className="plate plate4">
 								<div className="plate-title">
-									BUt WE DON'T USE NEURAL NETWORKS
+									Our goal is to create the <span className="select-red">best solution</span> on the market
 								</div>
 								<div className="plate-text">
-									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of neural networks. We believe, that it's not the most effective and promising way to solve problems, that AI has to solve.</p>
-									<p>Our approach to Artificial Intelligence is algorythmical: it's much more agile and, more importantly, transparent, meaning rules, that our AI constructs via learning process, are explicit and representable in the form, that human can understand.</p>
+									<p>Research and developement of the system took more than 6 years now, we tried several approaches to the problem, and now we're pretty sure, that the one we end up with is the best.</p>
+									<p>Results look promising too: on <span className="select-red"><strong>ICDAR</strong></span> test dataset our system shows these numbers:</p>
+									<div className="numbers">
+										<div className="number">
+											<div className="field">Recall</div>
+											<div className="dots"></div>
+											<div className="value">79,4%</div>
+										</div>
+										<div className="number">
+											<div className="field">Presicion</div>
+											<div className="dots"></div>
+											<div className="value">85%</div>
+										</div>
+										<div className="number">
+											<div className="field">F-number</div>
+											<div className="dots"></div>
+											<div className="value">82,5%</div>
+										</div>
+									</div>
+									<p>These numbers are not final, the system has a lot of potential. We plan to crank the f-number up to about 96% in the next 6 months.</p>
 								</div>
 							</div>
 						</div>
           </div>
 
-      <div className="slide slide4">
-						<div className="background slide4-back">
-							<div className="blocks" >
-								<img src={ slide4BackTop } />
-							</div>
-							<Plx className="blurred-right"
-								parallaxData={ [
-										{
-											start: 'self',
-											duration: 200,
-											name: 'second_left',
-											properties: [
-												{
-													startValue: 0,
-													endValue: 0,
-													property: 'translateY',
-												}
-										]}
-									]}>
-								<div>&nbsp;</div>
-								<img src={ slide4BackBlurred } />
-							</Plx>
-							<Plx className="blurred-left"
-								parallaxData={ [
-										{
-											start: 'self',
-											duration: 400,
-											name: 'second_left',
-											properties: [
-												{
-													startValue: 300,
-													endValue: -300,
-													property: 'translateY',
-												}
-											]
-										}]
-									}>
-								<div>&nbsp;</div>
-								<img src={ slide4BackBlurred } />
-							</Plx>
+      <div className="slide slide5">
+						<div className="background slide5-back border-top border-bottom">
 						</div>
-            <div className="slide-content-wrapper slide4-content-wrapper">
-							<div className="plate plate4">
-								<div className="plate-title">
-									BUt WE DON'T USE NEURAL NETWORKS
+            <div className="slide-content-wrapper slide5-content-wrapper">
+							<div className="team-title">
+								Our team
+							</div>
+							<div className="faces">
+								<div className="faces-columns-wrapper">
+									<div className="face-face ivan">
+
+									</div>
+									<div className="faces-name">
+										Ivan
+									</div>
+									<div className="faces-status">
+										Co-Founder and Head of Development Unit
+									</div>
+									<div className="faces-cv">
+										Founded his first technological startup on text recognition at the first course of the university, later participated in startups from different areas such as photogrammetry, 3d printing and scanning, image recognition etc, in 2015 became the co-founder of the company IVA.
+									</div>
 								</div>
-								<div className="plate-text">
-									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of neural networks. We believe, that it's not the most effective and promising way to solve problems, that AI has to solve.</p>
-									<p>Our approach to Artificial Intelligence is algorythmical: it's much more agile and, more importantly, transparent, meaning rules, that our AI constructs via learning process, are explicit and representable in the form, that human can understand.</p>
+								<div className="faces-columns-wrapper">
+									<div className="face-face viktor">
+
+									</div>
+									<div className="faces-name">
+										Viktor
+									</div>
+									<div className="faces-status">
+										Founder, CEO and Head of Financial Unit
+									</div>
+									<div className="faces-cv">
+										Started working in family business at the age of 16, since 2010 is a serial entrepreneur, the last 5 years is engaged in supporting small business first working in a government institution later in the alma mater, in 2015 founded the company IVA.
+									</div>
+								</div>
+
+								<div className="faces-columns-wrapper">
+									<div className="face-face alla">
+
+									</div>
+									<div className="faces-name">
+										Sergey
+									</div>
+									<div className="faces-status">
+										Co-Owner and Head of the Marketing and PR Unit
+									</div>
+									<div className="faces-cv">
+										Began building career in sales and marketing in parallel with learning at the university, accumulated 10 years of experience, joined the team of IVA in 2017.
+									</div>
 								</div>
 							</div>
 						</div>
