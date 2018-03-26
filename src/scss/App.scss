@@ -310,7 +310,7 @@ body { margin: 0; }
 			}
 
 			&.slide4 {
-				height:110vh;
+				height:120vh;
         .slide4-back {
 					display: flex;
 					background-color: white;
@@ -364,36 +364,67 @@ body { margin: 0; }
 					flex-direction: column;
           align-items: center;
           justify-content: center;
+          position: relative;
 					.plate-text {
 						width: 360px;
 					}
-					.numbers {
-						display: flex;
-						flex-direction: column;
-						margin-bottom: 40px;
-						.number {
-							margin-top: 15px;
-							display: flex;
-							justify-content: space-between;
-							align-items: flex-end;
-							white-space: nowrap;
-							.field {
-								font-size: 12pt;
-								font-weight: 600;
-							}
-							.dots {
-								letter-spacing: 4px;
-								flex-grow: 1;
-								overflow: hidden;
-								margin-left: 20px;
-								margin-right: 20px;
-								color: $MIDDLE_GRAY;
-								font-size: 18pt;
-								&::after {
-									content: '....................................';
-								}
-							}
-						}
+          .numbers-cards {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+  					.numbers {
+              display: flex;
+              flex-direction: column;
+              margin-left: 30px;
+              padding: 40px;
+              padding-top: 40px;
+              background-color: white;
+              margin-top: 20px;
+              box-shadow: 0 0 30px rgba(0,0,0,.1);
+              border-radius: 5px;
+              .number {
+                width: 200px;
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                white-space: nowrap;
+                position: relative;
+                &:first-of-type {
+                  margin-top: 0px;
+                }
+                .field {
+                  font-size: 12pt;
+                  font-weight: 600;
+                }
+                .dots {
+                  letter-spacing: 4px;
+                  flex-grow: 1;
+                  overflow: hidden;
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  color: #d9d9d9;
+                  font-size: 20pt;
+                  &::after {
+                    content: '....................................';
+                  }
+                }
+              }
+              .numbers-date {
+                width: 200px;
+                position: absolute;
+                bottom: 40px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 10pt;
+                color: $GRAY;
+                font-family: 'Open Sans';
+                font-style: italic;
+              }
+            }
 					}
 				}
 			}
@@ -490,6 +521,82 @@ body { margin: 0; }
           justify-content: center;
 				}
 			}
+			&.slide6 {
+				height:120vh;
+        .slide6-back {
+					display: flex;
+					width: 100%;
+				}
+				.slide6-content-wrapper {
+					justify-content: center;
+					align-items: center;
+          .plate6 {
+            margin-top: 60px;
+            margin-bottom: auto;
+            height: 87%;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .miniheader {
+              width: 100%;
+              text-align: left;
+              margin-top: 30px;
+              font-size: 12pt;
+              font-weight: 600;
+              color: $RED;
+              &.blue {
+                color: $BLUE;
+              }
+            }
+            p {
+              border: 0px;
+              border-left: 15px;
+              border-color: $RED;
+              border-style: solid;
+              padding-left: 20px;
+            }
+            .blue {
+              p {
+                border-color: $BLUE;
+              }
+            }
+          }
+				}
+      }
+      &.slide7 {
+        .slide7-content-wrapper {
+					justify-content: center;
+					align-items: center;
+          .plate7 {
+            margin-top: 60px;
+            margin-bottom: auto;
+            height: 87%;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .action-button {
+              background-color: $BLUE;
+              text-transform: uppercase;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: 600;
+              color: white;
+              font-family: 'Open Sans';
+              width: 100%;
+              height: 60px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+
 		}
 	}
 }
