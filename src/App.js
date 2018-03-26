@@ -12,25 +12,24 @@ import slide4BackBlurred from './images/slide4_blurred.png';
 import slide4BackTop from './images/slide4_blocks.svg';
 import slide1Iva from './images/slide1_iva.png';
 
-const sendEmail = function(name, target) {
-  debugger;
-  var data = new FormData();
-  data.append("from", "Vasilev Ivan <vasiljev.ivan@gmail.com>");
-  data.append("sender", "Vasilev Ivan <postmaster@sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org>");
-  data.append("to", target);
-  data.append("subject", "Confirmation");
-  data.append("text", "Hi " + target + "! We recieved your request and will contact you shortly with the info on how and when you can have your demo. Best regards, Ivan" );
-
-  var xhr = new XMLHttpRequest();
-  xhr.withCredentials = true;
-
-  xhr.open("POST", "https://api.mailgun.net/v3/sandboxb1c0360a32d64807903a2beefad1d61b.mailgun.org/messages");
-  xhr.setRequestHeader("authorization", "Basic 2df17391a50cd9eb9af61a8296ce008f");
-
-  xhr.send(data);
-}
-
 class App extends Component {
+  sendEmail(name, target) {
+    var data = new FormData();
+    data.append("from", "Vasilev Ivan <vasiljev.ivan@gmail.com>");
+    data.append("sender", "Vasilev Ivan <postmaster@sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org>");
+    data.append("to", target);
+    data.append("subject", "Confirmation");
+    data.append("text", "Hi " + target + "! We recieved your request and will contact you shortly with the info on how and when you can have your demo. Best regards, Ivan" );
+
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.open("POST", "https://api.mailgun.net/v3/sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org/messages");
+    xhr.setRequestHeader("Authorization", "Basic " + btoa("key-2df17391a50cd9eb9af61a8296ce008f"));
+
+    xhr.send(data);
+  }
+
   render() {
     return (
 			<div id="content-wrapper">
@@ -91,9 +90,9 @@ class App extends Component {
                   <p><strong>Fline</strong> is a text detection and recognition system,
 									based on our research in Artificial Intelligence</p>
                 </div>
-								<div onClick={sendEmail('Ivan', 'vasiljev.ivan@gmail.com')} className="action-button">
+								<a onClick={() => this.sendEmail('Ivan', 'vasiljev.ivan@gmail.com')} className="action-button">
 									Schedule demo
-								</div>
+								</a>
 								<div style={{ marginTop: 'auto', marginBottom: '10px' }}>
 									<img src={ slide1Iva } style={{ width: '130px', height: 'auto' }}/>
 								</div>
