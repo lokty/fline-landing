@@ -15,17 +15,23 @@ import slide1Iva from './images/slide1_iva.png';
 class App extends Component {
   sendEmail(name, target) {
     var data = new FormData();
-    data.append("from", "Vasilev Ivan <vasiljev.ivan@gmail.com>");
-    data.append("sender", "Vasilev Ivan <postmaster@sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org>");
-    data.append("to", target);
-    data.append("subject", "Confirmation");
-    data.append("text", "Hi " + target + "! We recieved your request and will contact you shortly with the info on how and when you can have your demo. Best regards, Ivan" );
+    data.append("from", "Fline Demo <postmaster@sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org>");
+    data.append("to", "vasiljev-iv@yandex.ru");
+    data.append("subject", "Fline Demo Request Confirmation");
+    data.append("text", "Test");
 
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 
-    xhr.open("POST", "https://api.mailgun.net/v3/sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org/messages");
-    xhr.setRequestHeader("Authorization", "Basic " + btoa("key-2df17391a50cd9eb9af61a8296ce008f"));
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        console.log(this.responseText);
+      }
+    });
+
+    xhr.open("POST", "https://api.mailgun.net/v3/mg.flineocr.com/messages");
+    xhr.setRequestHeader ("Authorization", "Basic " + btoa("api:key-2df17391a50cd9eb9af61a8296ce008f" ));
+    xhr.setRequestHeader("Cache-Control", "no-cache");
 
     xhr.send(data);
   }
