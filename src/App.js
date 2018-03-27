@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Plx from 'react-plx'
-
+import email from './email.html'
 import './scss/css/App.css';
 import logo from './images/logo.png';
 import slide1Back from './images/slide1_back.png';
@@ -18,7 +18,7 @@ class App extends Component {
     data.append("from", "Fline Demo <postmaster@sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org>");
     data.append("to", "vasiljev-iv@yandex.ru");
     data.append("subject", "Fline Demo Request Confirmation");
-    data.append("text", "Test");
+    data.append("html", email);
 
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
