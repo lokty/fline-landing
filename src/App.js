@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Plx from 'react-plx'
-import email from './email.html'
 import './scss/css/App.css';
 import logo from './images/logo.png';
 import slide1Back from './images/slide1_back.png';
@@ -15,10 +14,10 @@ import slide1Iva from './images/slide1_iva.png';
 class App extends Component {
   sendEmail(name, target) {
     var data = new FormData();
-    data.append("from", "Fline Demo <postmaster@sandboxf5d89ae030b9419f9d2b6c21f1c6e301.mailgun.org>");
+    data.append("from",  "Fline Confirmation Robot <robot@flineocr.com>");
     data.append("to", "vasiljev-iv@yandex.ru");
     data.append("subject", "Fline Demo Request Confirmation");
-    data.append("html", email);
+    data.append("html", '<html><p><strong>Hello ' + name + '!</strong></p>You are getting this email as a confirmation of your demo request. We will send you more details about it later.<br/></p><p>Vasilev Ivan</p></html>');
 
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
