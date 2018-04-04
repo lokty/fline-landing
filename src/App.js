@@ -10,35 +10,29 @@ import slide3BackRight from './images/slide3_right.svg';
 import slide4BackBlurred from './images/slide4_blurred.png';
 import slide4BackTop from './images/slide4_blocks.svg';
 import slide1Iva from './images/slide1_iva.png';
+import Modal from './modal'
 
 class App extends Component {
-  sendEmail(name, target) {
-    var data = new FormData();
-    data.append("from",  "Fline Confirmation Robot <robot@flineocr.com>");
-    data.append("to", "vasiljev-iv@yandex.ru");
-    data.append("subject", "Fline Demo Request Confirmation");
-    data.append("html", '<html><p><strong>Hello ' + name + '!</strong></p>You are getting this email as a confirmation of your demo request. We will send you more details about it later.<br/></p><p>Vasilev Ivan</p></html>');
 
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+  constructor(props) {
+    super(props);
+    this.state = { modalVisible: false };
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
+  }
 
-    xhr.addEventListener("readystatechange", function () {
-      if (this.readyState === 4) {
-        console.log(this.responseText);
-      }
-    });
+  closeModal() {
+    this.setState({ modalVisible: false });
+  }
 
-    xhr.open("POST", "https://api.mailgun.net/v3/mg.flineocr.com/messages");
-    xhr.setRequestHeader ("Authorization", "Basic " + btoa("api:key-2df17391a50cd9eb9af61a8296ce008f" ));
-    xhr.setRequestHeader("Cache-Control", "no-cache");
-
-    xhr.send(data);
+  openModal() {
+    this.setState({ modalVisible: true });
   }
 
   render() {
     return (
 			<div id="content-wrapper">
-
+        { this.state.modalVisible ? <Modal closeModal={ this.closeModal } /> : null }
       	<div className="navbar-wrapper">
 					<div className="navbar">
           	<img src={ logo } className="logo" />
@@ -95,7 +89,7 @@ class App extends Component {
                   <p><strong>Fline</strong> is a text detection and recognition system,
 									based on our research in Artificial Intelligence</p>
                 </div>
-								<a onClick={() => this.sendEmail('Ivan', 'vasiljev.ivan@gmail.com')} className="action-button">
+								<a onClick={this.openModal} className="action-button">
 									Schedule demo
 								</a>
 								<div style={{ marginTop: 'auto', marginBottom: '10px' }}>

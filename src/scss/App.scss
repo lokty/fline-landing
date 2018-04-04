@@ -1,5 +1,6 @@
 @import 'navbar.scss';
 @import 'colors.scss';
+@import 'modal.scss';
 
 $viktor: url(../../images/viktor.jpg);
 $ivan: url(../../images/ivan.jpg);
@@ -29,6 +30,21 @@ body { margin: 0; }
        local('FF-Clan'),
        url(../fonts/FF_Clan_Pro_Narrow_Thin_2.ttf) format('truetype');
        font-weight: 300;
+}
+
+.action-button {
+  background-color: $BLUE;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  font-family: 'Open Sans';
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .select-red {
@@ -207,19 +223,6 @@ body { margin: 0; }
 							font-weight: 600;
 							color: $RED;
 						}
-					}
-					.action-button {
-						background-color: $BLUE;
-						text-transform: uppercase;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						font-weight: 600;
-						color: white;
-						font-family: 'Open Sans';
-						width: 100%;
-						height: 60px;
-						margin-top: 20px;
 					}
 				}
 			}

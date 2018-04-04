@@ -1,0 +1,63 @@
+@import 'colors.scss';
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+  }
+  .modal-wrapper {
+    z-index: 10000;
+    position: relative;
+    margin-top: -60px;
+    border-top: 30px;
+    border-color: $MIDDLE_GRAY;
+    border-style: solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: white;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    max-width: 420px;
+    .header {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .form {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 30px;
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        padding-left: 10px;
+        font-style: italic;
+        color: #bcbcbc;
+      }
+      input {
+        margin-top: 15px;
+        padding-left: 10px;
+        width: 100%;
+        height: 30px;
+        &.error {
+          border-color: $RED;
+          border-style: solid;
+        }
+      }
+    }
+  }
+}
+
+
