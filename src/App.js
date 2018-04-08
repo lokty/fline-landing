@@ -89,7 +89,8 @@ class App extends Component {
                   <p><strong>Fline</strong> is a text detection and recognition system,
 									based on our research in Artificial Intelligence</p>
                 </div>
-								<a onClick={this.openModal} className="action-button">
+						{/* 		<a onClick={this.openModal} className="action-button"> */}
+                <a className="action-button">
 									Schedule demo
 								</a>
 								<div style={{ marginTop: 'auto', marginBottom: '10px' }}>
@@ -173,8 +174,8 @@ class App extends Component {
 									Based on our <br/>research in <span className="select-red">AI</span>
 								</div>
 								<div className="plate-text">
-									<p>In the core of the system (both detection and recognition) lies <span className="select-red"><strong>Artificial Intelligence</strong></span>: it make hypothesys, tries to interpret the result, learns on its mistakes -- all the things, that AI should do.</p>
-									<p>Concidering the complexity of the task, using AI is inevitable: it grants more sophisticated tools to classify data, rather than just plain heuristics and </p>
+									<p>In the core of the system (both detection and recognition) lies <span className="select-red"><strong>Artificial Intelligence</strong></span>: it makes hypothesys, tries to interpret the result, learns on its mistakes -- all the things, that AI should do.</p>
+									<p>Concidering the complexity of the task, using AI is inevitable: it grants more sophisticated tools to classify data, rather than just using plain heuristics.</p>
 								</div>
 							</div>
 						</div>
@@ -255,7 +256,7 @@ class App extends Component {
 									BUt WE DON'T USE <span className="select-blue">NEURAL NETWORKS</span>
 								</div>
 								<div className="plate-text">
-									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of <span className="select-blue"><strong>neural networks</strong></span>. We believe, that it's not the most effective and promising way to solve problems, that AI has to solve.</p>
+									<p>Even though AI is a major part of our system, we don't use classic or any novel kind of <span className="select-blue"><strong>neural networks</strong></span>. We believe, that it isn't the most effective and promising way to solve problems, that AI has to solve.</p>
 									<p>Our approach to Artificial Intelligence is algorythmical: it's much more agile and, more importantly, transparent, meaning rules, that our AI constructs via learning process, are explicit and representable in the form, that human can understand.</p>
 								</div>
 							</div>
@@ -274,8 +275,8 @@ class App extends Component {
 									Our goal is to create the <span className="select-red">best solution</span> on the market
 								</div>
 								<div className="plate-text">
-									<p>Research and developement of the system took more than 6 years now, we tried several approaches to the problem, and now we're pretty sure, that the one we end up with is the best.</p>
-									<p>Results look promising too: on <span className="select-red"><strong>ICDAR</strong></span> test dataset our system shows these numbers:</p>
+									<p>Research and developement of the system took more than 6 years now, we tried several approaches to the problem, and now we're pretty sure, that the one we ended up with is the best.</p>
+									<p>Results look promising too: on <span className="select-red"><strong>ICDAR</strong></span> test dataset our system shows numbers, listed below (we use our own metrics).</p>
 									<p>These numbers are not final, the system has a lot of potential. We plan to crank the f-number up to about 96% in the next 6 months.</p>
 								</div>
                 <div className="numbers-cards">
@@ -355,6 +356,7 @@ able to detect and recognize the text as good as human</p>
              <p>that means, that it will be source-agnostic: digital-born and real-world images are use the same algorithm</p>
              <p>our claim is that in its final form our system will be
 able to detect and recognize the text as good as human</p>
+ <p>it will be able to recognize hand-written text, hieroglyphs, arabic script and captchas</p>
              <p>AI behind the system can also be reused in other fields
 like natural language processing, information retriaval
 and decision making</p>
@@ -415,10 +417,10 @@ the core team members are still working on the project</p>
 										Sergey
 									</div>
 									<div className="faces-status">
-										Co-Owner and Head of the Marketing and PR Unit
+										Co-Founder and Author of the system
 									</div>
 									<div className="faces-cv">
-										Began building career in sales and marketing in parallel with learning at the university, accumulated 10 years of experience, joined the team of IVA in 2017.
+                    The "brain" behind the system and author of the most of the algorithms behind it, including AI, text detection and recognition.
 									</div>
 								</div>
 							</div>
@@ -436,7 +438,7 @@ the core team members are still working on the project</p>
                     <div style={{ marginTop: '40px'}} className="action-button">
                       Schedule demo
                     </div>
-                    <p style={{ textAlign: 'center' }}>or write us to <a mailto="vasiljev.ivan@gmail.com"><span style={{ color: '#eb6d67' }}> vasiljev.ivan@gmail.com</span></a></p>
+                    <p style={{ textAlign: 'center' }}>or write us to <a mailto="info@flineocr.com"><span style={{ color: '#eb6d67' }}>info@flineocr.com</span></a></p>
                   </div>
                 </div>
               </div>

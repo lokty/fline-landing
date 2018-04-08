@@ -10,6 +10,11 @@
 	align-items: center;
 	position: fixed;
 	z-index: 20;
+  @media (max-width: 1000px) {
+    padding-left: 40px;
+    padding-right: -40px;
+  }
+
 	.navbar {
 		width: 100%;
 		max-width: 1000px;
@@ -18,7 +23,7 @@
 		align-items: center;
 		justify-content: space-between;
 		top: 0;
-		.logo {
+   		.logo {
 			max-height: 50px;
 		}
 		.links {
